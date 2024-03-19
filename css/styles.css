@@ -5,33 +5,41 @@ body {
 }
 
 .box {
-position: relative;
-margin-inline: auto;
-width: 150px;
-height: 150px;
-background-color: yellow;
-box-shadow: 250px 250px purple, 0px 250px burlywood, -250px 250px red, 500px 250px pink
-}
-
-.box::after {
-    content:"";
-    position:absolute;
-    top: 0;
-    left: 250px;
+    position: relative;
+    margin-inline: auto;
     width: 150px;
     height: 150px;
-    border-radius: 25%;
-    background-color: blue;
-}
-
-.box::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 250px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: bisque;
-
-}
+    background-color: rgb(255, 72, 0);
+    box-shadow: -250px 250px rgb(21, 159, 16), 250px 500px rgb(80, 22, 214)
+    }
+    
+    
+    .box::after {
+        content:"";
+        position:absolute;
+        top: 0;
+        left: 250px;
+        width: 150px;
+        height: 150px;
+        border-radius: 25%;
+        background-color: blue;
+        box-shadow: -250px 250px lime, -500px 500px rgb(123, 45, 104)
+    }
+    
+    
+    .box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 250px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: yellow;
+        box-shadow: 500px 250px rgb(255, 0, 102), 250px 500px rgb(149, 216, 255)
+        
+    }
+    
+    
+    
+    
